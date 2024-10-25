@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Primera Pagina</title>
+
+        <!-- Vinculación de la hoja de estilos -->
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1>Mi Página de Taller</h1>
+        </header>
+
+        <section>
+            <h2>Bienvenido</h2>
+            <p>Este es un sitio web de ejemplo construido en el taller.</p>
+            <button onclick="cambiarMensaje()">Cambiar Mensaje</button>
+            <p id="mensaje">Mensaje original</p>
+        </section>
+
+        <section>
+            <img src="uniminuto.png"> 
+        </section>
+
+        <form onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <footer>
+            <p> Mi sitio web de taller</p>
+        </footer>
+    
+        <!-- Vinculación del archivo JavaScript -->
+        <script src="scripts.js"></script>
+    </body>
+</html>
